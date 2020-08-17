@@ -1,6 +1,6 @@
 //Created by: Byron Georgopoulos
 //Created on: 31/07/2020
-//Last Updated on: 03/08/2020
+//Last Updated on: 17/08/2020
 //Description: Using Geolocation API, OpenWeatherMap API, and Fetch API, this React App displays the weather at the user current location,
 //and a user can search the OpenWeatherMap database for the weather in (most) cities across the globe. 
 
@@ -55,7 +55,7 @@ class App extends Component {
 
   //Get Latitude & Longitude, and search OpenWeatherMap API based on location (coords)
   getLocalWeather = async (latitude, longitude) => {
-    const apiCall = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${myKey}&units=metric`);
+    const apiCall = await fetch(`//api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${myKey}&units=metric`);
     const result = await apiCall.json();
 
     this.setState({ isLoaded: true });
@@ -90,7 +90,7 @@ class App extends Component {
     let userCity = this.state.userCity;
     this.refs.cityInput.value = '';
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${userCity}&appid=${myKey}&units=metric`)
+    fetch(`//api.openweathermap.org/data/2.5/weather?q=${userCity}&appid=${myKey}&units=metric`)
         .then(res => res.json())
         .then(
           (result) => {
