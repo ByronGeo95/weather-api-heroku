@@ -1,5 +1,56 @@
 .App {
   text-align: center;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.LoadingMsg
+{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#cityForm
+{
+  text-align: center;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 40%; */
+}
+
+#weatherCard
+{
+  /* width: 50%; */
+  text-align: center;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#modalHeading
+{
+  text-align: center;
+}
+
+#weatherIcon
+{
+  width: 35%;
+  float: right;
+  padding-top: 5px;;
+}
+
+#flagIcon
+{
+  font-size: 400%;
+  float: left;
+  padding-top: 25px;
 }
 
 .App-logo {
